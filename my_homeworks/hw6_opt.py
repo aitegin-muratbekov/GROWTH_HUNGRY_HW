@@ -10,8 +10,8 @@ while True:
             print(f"{tasks.index(task)+1}. {task} \n")
     elif answer == '3':
         option = str(input("index or name?\n"))
-        if option.isdigit == True:
-            del tasks[int(option)+1]
+        if option.isdigit() == True:
+            del tasks[int(option)-1]
         else:
              tasks.remove(option)
     elif answer == "q":
